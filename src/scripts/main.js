@@ -51,6 +51,12 @@ startButton.addEventListener(
       game.restart();
       actualizeBoard();
       actualizeScore();
+
+      document.querySelector('.message-lose').className =
+        'message message-lose hidden';
+
+      document.querySelector('.message-win').className =
+        'message message-win hidden';
     });
 
     // #region game logic
